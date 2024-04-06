@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'corsheaders',
 
+    'tasks.apps.TasksConfig'
+
 ]
 
 MIDDLEWARE = [

@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from src.yasg import urlpatterns as openapi_api_urlpatterns
+from src.yasg import urlpatterns as openapi_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("__debug__/", include("debug_toolbar.urls")),
+    path('api/v1/', include('tasks.urls')),
 ]
 
-urlpatterns += openapi_api_urlpatterns
+urlpatterns += openapi_urlpatterns
