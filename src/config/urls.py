@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from src.yasg import urlpatterns as openapi_urlpatterns
+from yasg import urlpatterns as openapi_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
